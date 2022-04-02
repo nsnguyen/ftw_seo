@@ -11,9 +11,20 @@ Things you may want to cover:
 
 * Configuration
 
+start mysql
+`brew services start mysql`
+
+restart mysql
+`brew services restart mysql`
+
 * Database creation
+`rake db:create`
+
+create Question model
+`bin/rails generate model Question id:integer question_number:integer question:text answer:text`
 
 * Database initialization
+
 
 * How to run the test suite
 
