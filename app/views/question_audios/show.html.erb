@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @question_audio %>
+
+<div>
+  <%= link_to "Edit this question audio", edit_question_audio_path(@question_audio) %> |
+  <%= link_to "Back to question audios", question_audios_path %>
+
+  <%= button_to "Destroy this question audio", @question_audio, method: :delete %>
+</div>

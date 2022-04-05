@@ -21,9 +21,15 @@ restart mysql
 `rake db:create`
 
 create Question model
-`bin/rails generate model Question id:integer question_number:integer question:text answer:text`
+`bin/rails generate scaffold Question question_number:integer question:text answer:text question_vn:text answer_vn:text`
+
+`bin/rails generate scaffold QuestionAudio question_id:integer question_audio:blob answer_audio:blob`
+
+create Question_Audio Model
 
 * Database initialization
+
+`use ror_citizen_development;`
 
 
 * How to run the test suite

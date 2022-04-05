@@ -1,0 +1,2 @@
+class QuestionAudio < ApplicationRecord
+end

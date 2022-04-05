@@ -1,0 +1,4 @@
+1. ALERTS.sql does not use ENRICHED_EXPENSE_TRANSACTIONS_QUERY
+https://github.com/sidecarhealth/sidecar-ds-apps/blob/staging/sh-suspicious-activity-alerts/queries.py#L20
+
+2. 
