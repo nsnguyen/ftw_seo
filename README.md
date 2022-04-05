@@ -39,3 +39,21 @@ create Question_Audio Model
 * Deployment instructions
 
 * ...
+
+
+
+# Front End stuff
+`rails webpacker:install`
+
+`yarn add bootstrap`
+
+`yarn add @popperjs/core`
+
+
+
+# cleanup
+`bin/rails assets:clobber`
+
+`bin/rails webpacker:compile`
+
+`bin/rails server`

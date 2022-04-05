@@ -17,7 +17,10 @@ audio = File.open(Rails.root.join('lib', 'seeds', 'question_1.mp3'), 'rb').read
 
 
 puts 'Seeding Questions Audio 1'
-QuestionAudio.create(question_number: 1, question_audio: audio)
+# QuestionAudio.create(question_number: 1, question_audio: audio)
+
+QuestionAudio.create(question_number: 1)
+
 
 ####################################################################################
 
@@ -31,7 +34,9 @@ Question.create(question_number: 2,
 audio = File.open(Rails.root.join('lib', 'seeds', 'question_2.mp3'), 'rb').read
 
 puts 'Seeding Questions Audio 2'
-QuestionAudio.create(question_number: 2, question_audio: audio)
+# QuestionAudio.create(question_number: 2, question_audio: audio)
+
+QuestionAudio.create(question_number: 2)
 
 ####################################################################################
 
@@ -45,7 +50,9 @@ Question.create(question_number: 3,
 audio = File.open(Rails.root.join('lib', 'seeds', 'question_2.mp3'), 'rb').read
 
 puts 'Seeding Questions Audio 3'
-QuestionAudio.create(question_number: 3, question_audio: audio)
+# QuestionAudio.create(question_number: 3, question_audio: audio)
+
+QuestionAudio.create(question_number: 3)
 
 ####################################################################################
 
@@ -59,6 +66,8 @@ Question.create(question_number: 4,
 audio = File.open(Rails.root.join('lib', 'seeds', 'question_2.mp3'), 'rb').read
 
 puts 'Seeding Questions Audio 4'
-QuestionAudio.create(question_number: 4, question_audio: audio)
+# QuestionAudio.create(question_number: 4, question_audio: audio)
+
+QuestionAudio.create(question_number: 4)
 
 ####################################################################################
