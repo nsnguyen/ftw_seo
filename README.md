@@ -1,59 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my app for citizen.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-start mysql
+# Local Testing
+## Starting MySQL
 `brew services start mysql`
 
-restart mysql
+## Restarting MySQL
 `brew services restart mysql`
 
-* Database creation
-`rake db:create`
+## Rails
+## Database Initialization
 
-create Question model
 `bin/rails generate scaffold Question question_number:integer question:text answer:text question_vn:text answer_vn:text`
 
 `bin/rails generate scaffold QuestionAudio question_id:integer question_audio:blob answer_audio:blob`
 
-create Question_Audio Model
-
-* Database initialization
-
-`use ror_citizen_development;`
+`rake db:create db:migrate db:seed`
 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-
-# Front End stuff
+# Front-End
+## WebPack
 `rails webpacker:install`
+`webpacker.yml` for webpacker configuration
 
+## Bootstrap
 `yarn add bootstrap`
-
 `yarn add @popperjs/core`
 
-
-
-# cleanup
+## Cleanup
 `bin/rails assets:clobber`
-
 `bin/rails webpacker:compile`
-
 `bin/rails server`

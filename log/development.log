@@ -1060,3 +1060,13 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 5968)
 
 
+Started GET "/" for ::1 at 2022-04-05 18:45:42 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2980)
+Completed 200 OK in 4ms (Views: 4.0ms | Allocations: 3708)
+
+
