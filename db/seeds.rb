@@ -13,7 +13,7 @@ Question.create(question_number: 1,
                  question_vn: 'Luật cao nhất của quốc gia là gì?',
                  answer_vn: 'Hiến Pháp')
 
-audio = File.open(Rails.root.join('lib', 'seeds', 'question_1.mp3'), 'rb').read
+# audio = File.open(Rails.root.join('lib', 'seeds', 'question_1.mp3'), 'rb').read
 
 
 puts 'Seeding Questions Audio 1'
@@ -31,7 +31,7 @@ Question.create(question_number: 2,
                  question_vn: 'Hiến Pháp có mục đích gì?',
                  answer_vn: '- thiết lập chánh phủ\n - mô tả tổ chức chánh phủ\n - bảo vệ các quyền căn bản của người dân Hoa Kỳ')
 
-audio = File.open(Rails.root.join('lib', 'seeds', 'question_2.mp3'), 'rb').read
+# audio = File.open(Rails.root.join('lib', 'seeds', 'question_2.mp3'), 'rb').read
 
 puts 'Seeding Questions Audio 2'
 # QuestionAudio.create(question_number: 2, question_audio: audio)
@@ -47,7 +47,7 @@ Question.create(question_number: 3,
                  question_vn: 'Ý tưởng tự quản trị nằm trong ba chữ đầu tiên của Hiến Pháp. Các chữ này là những chữ nào?',
                  answer_vn: 'Chúng tôi người dân (We the People)')
 
-audio = File.open(Rails.root.join('lib', 'seeds', 'question_2.mp3'), 'rb').read
+# audio = File.open(Rails.root.join('lib', 'seeds', 'question_2.mp3'), 'rb').read
 
 puts 'Seeding Questions Audio 3'
 # QuestionAudio.create(question_number: 3, question_audio: audio)
@@ -63,7 +63,7 @@ Question.create(question_number: 4,
                  question_vn: 'Tu chính án là gì?',
                  answer_vn: '- một sự thay đổi (trong Hiến Pháp)\n - một sự thêm (vào Hiến Pháp)\n')
 
-audio = File.open(Rails.root.join('lib', 'seeds', 'question_2.mp3'), 'rb').read
+# audio = File.open(Rails.root.join('lib', 'seeds', 'question_2.mp3'), 'rb').read
 
 puts 'Seeding Questions Audio 4'
 # QuestionAudio.create(question_number: 4, question_audio: audio)

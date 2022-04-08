@@ -2709,3 +2709,3814 @@ Processing by QuestionsController#index as HTML
 Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.4ms | Allocations: 5421)
 
 
+Started GET "/" for ::1 at 2022-04-07 18:34:15 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 410)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3549)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 6011)
+
+
+Started GET "/questions" for ::1 at 2022-04-07 18:36:18 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.3ms | Allocations: 312)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 7486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 9795)
+Completed 200 OK in 15ms (Views: 9.0ms | ActiveRecord: 4.5ms | Allocations: 11376)
+
+
+Started GET "/" for ::1 at 2022-04-07 19:20:36 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3267)
+Completed 200 OK in 9ms (Views: 8.7ms | Allocations: 3983)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:20:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/actionpack-7.0.2.3/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/rack/logger.rb:36:in `call_app'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/rack/logger.rb:25:in `block in call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/activesupport-7.0.2.3/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/activesupport-7.0.2.3/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/activesupport-7.0.2.3/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/rack/logger.rb:25:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/actionpack-7.0.2.3/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/actionpack-7.0.2.3/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/activesupport-7.0.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/actionpack-7.0.2.3/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/actionpack-7.0.2.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/actionpack-7.0.2.3/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/actionpack-7.0.2.3/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/webpacker-5.4.3/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/rack-proxy-0.7.2/lib/rack/proxy.rb:67:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/engine.rb:530:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/puma-5.6.4/lib/puma/configuration.rb:252:in `call'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/puma-5.6.4/lib/puma/request.rb:77:in `block in handle_request'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/puma-5.6.4/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/puma-5.6.4/lib/puma/request.rb:76:in `handle_request'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/puma-5.6.4/lib/puma/server.rb:441:in `process_client'
+	from /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/puma-5.6.4/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-04-07 19:20:49 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2545)
+Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 2845)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:20:49 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/questions" for ::1 at 2022-04-07 19:20:53 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.6ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2175)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 4514)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.6ms | Allocations: 5163)
+
+
+Started GET "/welcome" for ::1 at 2022-04-07 19:23:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:25:45 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 329)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 1128)
+
+
+Started GET "/" for ::1 at 2022-04-07 19:25:54 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 319)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1030)
+
+
+Started GET "/" for ::1 at 2022-04-07 19:25:55 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 26)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 263)
+
+
+Started GET "/" for ::1 at 2022-04-07 19:25:57 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 466)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3221)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3982)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:25:57 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:26:21 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nnguyen/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 33)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 314)
+
+
+Started GET "/" for ::1 at 2022-04-07 19:26:41 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 26)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2573)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3215)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:26:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:27:37 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 26)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2588)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 3230)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:27:37 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:27:39 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2421)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 2705)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:27:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/study_citizen" for ::1 at 2022-04-07 19:28:17 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (2.0ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.2ms | Allocations: 250)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 4184)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 6503)
+Completed 200 OK in 13ms (Views: 5.7ms | ActiveRecord: 6.3ms | Allocations: 8018)
+
+
+Started GET "/questions" for ::1 at 2022-04-07 19:28:19 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1324)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3546)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.4ms | Allocations: 3842)
+
+
+Started GET "/study_citizen" for ::1 at 2022-04-07 19:28:27 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.0ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.2ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.2ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1303)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 3525)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 1.0ms | Allocations: 3799)
+
+
+Started GET "/study_citizen" for ::1 at 2022-04-07 19:31:01 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/study_citizen"):
+  
+Started GET "/citizen" for ::1 at 2022-04-07 19:31:10 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.4ms | Allocations: 250)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 4110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 6665)
+Completed 200 OK in 20ms (Views: 14.1ms | ActiveRecord: 4.0ms | Allocations: 8336)
+
+
+Started GET "/" for ::1 at 2022-04-07 19:31:13 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 469)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3013)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3696)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:31:13 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:34:57 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3261)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3984)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:34:57 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:34:57 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2433)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 2715)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:34:57 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:35:05 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3249)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 3951)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:35:05 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:35:05 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2445)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 2728)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:35:05 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:54:37 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3252)
+Completed 200 OK in 9ms (Views: 7.5ms | Allocations: 3945)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:54:37 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/citizen" for ::1 at 2022-04-07 19:55:20 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 1.2ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 2131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 4672)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 1.9ms | Allocations: 5533)
+
+
+Started GET "/citizen" for ::1 at 2022-04-07 19:55:23 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.2ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1986)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 4527)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 5402)
+
+
+Started GET "/" for ::1 at 2022-04-07 19:56:06 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3246)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 3971)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:56:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:56:11 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3264)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 3989)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:56:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:57:15 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 467)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3245)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 3969)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:57:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:57:23 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 467)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3248)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 3973)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:57:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:57:30 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3235)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3960)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:57:30 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:57:31 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2448)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 2730)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:57:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/citizen" for ::1 at 2022-04-07 19:57:48 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.6ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1979)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4520)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.4ms | Allocations: 5366)
+
+
+Started GET "/" for ::1 at 2022-04-07 19:57:49 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 467)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3073)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 3662)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:57:49 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:58:04 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 467)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3257)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3982)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:58:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:58:16 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3243)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3968)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:58:16 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:58:24 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3243)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 3968)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:58:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:58:24 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2421)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 2703)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:58:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:58:33 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3243)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 3946)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:58:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:58:38 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 467)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3254)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 3979)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:58:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:58:46 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3258)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3983)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:58:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:59:00 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 464)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3263)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 3988)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:59:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:59:09 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 462)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3252)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3977)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:59:09 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:59:25 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 463)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3250)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 3975)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:59:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:59:52 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 463)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3262)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 3987)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:59:52 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 19:59:52 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2422)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 2705)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 19:59:52 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:00:45 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 463)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3247)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 3949)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:00:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:00:50 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 462)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3243)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 3967)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:00:50 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:01:21 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 463)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3247)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 3971)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:01:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:01:38 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 462)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3246)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 3969)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:01:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:01:47 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 462)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3255)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3980)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:01:47 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:03:42 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 461)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3242)
+Completed 200 OK in 8ms (Views: 7.5ms | Allocations: 3956)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:03:42 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:04:16 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3238)
+Completed 200 OK in 10ms (Views: 9.2ms | Allocations: 3952)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:04:16 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:04:33 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3232)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 3946)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:04:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:04:33 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2421)
+Completed 200 OK in 6ms (Views: 5.8ms | Allocations: 2699)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:04:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:06:14 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 449)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3227)
+Completed 200 OK in 10ms (Views: 9.9ms | Allocations: 3920)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:06:14 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:06:28 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 456)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3249)
+Completed 200 OK in 12ms (Views: 9.7ms | Allocations: 3963)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:06:28 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:10:39 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3244)
+Completed 200 OK in 8ms (Views: 7.3ms | Allocations: 3958)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:10:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:10:59 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3235)
+Completed 200 OK in 12ms (Views: 10.1ms | Allocations: 3949)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:10:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:11:06 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3244)
+Completed 200 OK in 11ms (Views: 10.8ms | Allocations: 3958)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:11:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:11:12 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3238)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 3952)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:11:12 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:11:17 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 456)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3234)
+Completed 200 OK in 11ms (Views: 10.1ms | Allocations: 3948)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:11:18 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:11:30 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 458)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3246)
+Completed 200 OK in 5ms (Views: 4.8ms | Allocations: 3961)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:11:30 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:11:35 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 456)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3228)
+Completed 200 OK in 4ms (Views: 4.0ms | Allocations: 3943)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:11:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:11:41 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3241)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 3955)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:11:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:11:45 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3259)
+Completed 200 OK in 6ms (Views: 5.4ms | Allocations: 3973)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:11:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:11:51 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 3241)
+Completed 200 OK in 5ms (Views: 4.7ms | Allocations: 3955)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:11:51 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:11:57 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3235)
+Completed 200 OK in 9ms (Views: 7.5ms | Allocations: 3949)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:11:57 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:12:00 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3238)
+Completed 200 OK in 22ms (Views: 20.7ms | Allocations: 3952)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:12:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:13:21 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 456)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3240)
+Completed 200 OK in 18ms (Views: 17.4ms | Allocations: 3955)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:13:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:14:36 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 3247)
+Completed 200 OK in 8ms (Views: 4.8ms | Allocations: 3961)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:14:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:14:44 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3256)
+Completed 200 OK in 7ms (Views: 6.1ms | Allocations: 3970)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:14:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:14:56 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 462)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 3240)
+Completed 200 OK in 14ms (Views: 7.4ms | Allocations: 3955)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:14:56 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:15:06 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3229)
+Completed 200 OK in 10ms (Views: 9.9ms | Allocations: 3944)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:15:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:15:30 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3250)
+Completed 200 OK in 8ms (Views: 7.8ms | Allocations: 3965)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:15:30 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:16:24 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 456)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3249)
+Completed 200 OK in 7ms (Views: 6.2ms | Allocations: 3964)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:16:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:17:11 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 455)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3245)
+Completed 200 OK in 10ms (Views: 9.6ms | Allocations: 3959)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:17:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:21:23 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 452)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3239)
+Completed 200 OK in 16ms (Views: 14.4ms | Allocations: 3954)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:21:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:23:38 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 452)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3242)
+Completed 200 OK in 9ms (Views: 7.9ms | Allocations: 3956)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:23:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:24:03 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 452)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 3242)
+Completed 200 OK in 15ms (Views: 14.0ms | Allocations: 3956)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:24:03 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:24:40 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 452)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3239)
+Completed 200 OK in 11ms (Views: 9.4ms | Allocations: 3954)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:24:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:25:38 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 452)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3224)
+Completed 200 OK in 10ms (Views: 8.9ms | Allocations: 3938)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:25:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:25:42 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 450)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3222)
+Completed 200 OK in 4ms (Views: 4.1ms | Allocations: 3937)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:25:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:30:30 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 451)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3244)
+Completed 200 OK in 14ms (Views: 12.7ms | Allocations: 3959)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:30:30 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:30:41 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 449)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3224)
+Completed 200 OK in 7ms (Views: 6.3ms | Allocations: 3939)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:30:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:31:24 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 450)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3243)
+Completed 200 OK in 11ms (Views: 10.5ms | Allocations: 3956)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:31:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:32:44 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 450)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3243)
+Completed 200 OK in 10ms (Views: 9.0ms | Allocations: 3957)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:32:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:32:45 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2430)
+Completed 200 OK in 11ms (Views: 8.5ms | Allocations: 2708)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:32:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:33:06 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 450)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3246)
+Completed 200 OK in 8ms (Views: 7.9ms | Allocations: 3938)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:33:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:33:21 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 450)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3249)
+Completed 200 OK in 7ms (Views: 6.6ms | Allocations: 3963)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:33:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:33:35 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 449)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3242)
+Completed 200 OK in 11ms (Views: 10.4ms | Allocations: 3956)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:33:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/blog.css" for ::1 at 2022-04-07 20:33:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:34:04 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 450)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3240)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 3954)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:34:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:41:43 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2433)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 2710)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:41:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:45:30 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 450)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 3252)
+Completed 200 OK in 7ms (Views: 6.2ms | Allocations: 3945)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:45:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:45:46 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 448)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3232)
+Completed 200 OK in 10ms (Views: 9.3ms | Allocations: 3946)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:45:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:46:28 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 450)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3237)
+Completed 200 OK in 7ms (Views: 6.8ms | Allocations: 3950)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:46:28 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:47:15 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 450)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 3234)
+Completed 200 OK in 20ms (Views: 19.2ms | Allocations: 3949)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:47:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:47:47 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 450)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3228)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 3942)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:47:47 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:48:06 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 449)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3224)
+Completed 200 OK in 11ms (Views: 10.4ms | Allocations: 3937)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:48:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:48:21 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 450)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3255)
+Completed 200 OK in 7ms (Views: 6.4ms | Allocations: 3969)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:48:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:48:40 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 446)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3230)
+Completed 200 OK in 5ms (Views: 4.5ms | Allocations: 3944)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:48:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:48:59 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 448)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 3241)
+Completed 200 OK in 5ms (Views: 4.3ms | Allocations: 3956)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:48:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:49:04 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 445)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 3220)
+Completed 200 OK in 5ms (Views: 4.4ms | Allocations: 3935)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:49:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:49:14 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 444)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3225)
+Completed 200 OK in 6ms (Views: 4.9ms | Allocations: 3940)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:49:14 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:49:23 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 413)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3191)
+Completed 200 OK in 6ms (Views: 5.8ms | Allocations: 3905)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:49:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/blog.css" for ::1 at 2022-04-07 20:49:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:50:11 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 413)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3224)
+Completed 200 OK in 5ms (Views: 4.4ms | Allocations: 3938)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:50:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:50:22 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 413)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3194)
+Completed 200 OK in 12ms (Views: 10.1ms | Allocations: 3908)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:50:22 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:50:32 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 413)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3203)
+Completed 200 OK in 8ms (Views: 7.7ms | Allocations: 3917)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:50:32 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:50:55 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 413)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 3185)
+Completed 200 OK in 16ms (Views: 15.4ms | Allocations: 3900)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:50:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:50:55 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2424)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 2702)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:50:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:56:35 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 413)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3197)
+Completed 200 OK in 10ms (Views: 9.3ms | Allocations: 3890)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:56:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:57:12 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 399)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3174)
+Completed 200 OK in 5ms (Views: 4.7ms | Allocations: 3888)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:57:12 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:57:25 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 347)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3126)
+Completed 200 OK in 4ms (Views: 3.8ms | Allocations: 3840)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:57:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:57:33 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 325)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3100)
+Completed 200 OK in 6ms (Views: 5.3ms | Allocations: 3814)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:57:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:57:45 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 316)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 3112)
+Completed 200 OK in 15ms (Views: 13.9ms | Allocations: 3826)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:57:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:58:31 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 321)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3093)
+Completed 200 OK in 4ms (Views: 4.0ms | Allocations: 3808)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:58:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 20:58:38 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 316)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3103)
+Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 3817)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 20:58:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/questions" for ::1 at 2022-04-07 20:58:39 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.7ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 4469)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.6ms | Allocations: 5140)
+
+
+Started GET "/questions" for ::1 at 2022-04-07 21:00:51 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.2ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1317)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3539)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.4ms | Allocations: 3838)
+
+
+Started GET "/questions" for ::1 at 2022-04-07 21:00:55 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.1ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.2ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1326)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 3548)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 1.1ms | Allocations: 3818)
+
+
+Started GET "/" for ::1 at 2022-04-07 21:02:12 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 321)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 3099)
+Completed 200 OK in 9ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3802)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:02:12 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:02:38 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 316)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3103)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 3827)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:02:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:02:46 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 316)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3112)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 3836)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:02:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:02:55 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 315)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3120)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3844)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:02:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:03:29 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 286)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3061)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3785)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:03:29 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:03:42 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 285)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3069)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 3793)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:03:42 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:04:01 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 282)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3084)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3808)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:04:01 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:05:27 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 281)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3056)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 3780)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:05:27 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:05:28 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2421)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 2703)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:05:28 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:05:30 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 282)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3063)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3765)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:05:30 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:09:36 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 282)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3066)
+Completed 200 OK in 10ms (Views: 9.8ms | Allocations: 3781)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:09:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:12:26 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 282)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3072)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 3786)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:12:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:20:55 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3065)
+Completed 200 OK in 10ms (Views: 8.8ms | Allocations: 3779)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:20:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:21:05 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3059)
+Completed 200 OK in 12ms (Views: 10.5ms | Allocations: 3773)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:21:05 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:22:17 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3065)
+Completed 200 OK in 14ms (Views: 13.1ms | Allocations: 3779)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:22:17 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:22:22 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2457)
+Completed 200 OK in 8ms (Views: 7.8ms | Allocations: 2735)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:22:22 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:22:24 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3053)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 3746)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:22:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:22:25 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2415)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 2693)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:22:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:22:44 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3044)
+Completed 200 OK in 4ms (Views: 4.3ms | Allocations: 3737)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:22:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:22:52 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3066)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 3780)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:22:52 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/questions" for ::1 at 2022-04-07 21:26:44 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 1.0ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.3ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4674)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 0.8ms | Allocations: 5536)
+
+
+Started GET "/questions" for ::1 at 2022-04-07 21:26:47 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.0ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1296)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3518)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 1.0ms | Allocations: 3815)
+
+
+Started GET "/" for ::1 at 2022-04-07 21:31:37 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 271)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3076)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 3779)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:31:37 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:39:07 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3050)
+Completed 200 OK in 15ms (Views: 14.0ms | Allocations: 3764)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:39:07 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:39:20 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 3053)
+Completed 200 OK in 4ms (Views: 4.0ms | Allocations: 3767)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:39:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:39:24 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 271)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3064)
+Completed 200 OK in 8ms (Views: 7.6ms | Allocations: 3778)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:39:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:39:42 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3059)
+Completed 200 OK in 12ms (Views: 10.0ms | Allocations: 3772)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:39:42 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:40:00 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3055)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 3769)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:40:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:40:39 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3051)
+Completed 200 OK in 5ms (Views: 5.0ms | Allocations: 3765)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:40:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:40:54 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3054)
+Completed 200 OK in 8ms (Views: 8.0ms | Allocations: 3768)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:40:54 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:41:09 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3054)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 3767)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:41:09 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:42:34 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3055)
+Completed 200 OK in 9ms (Views: 8.1ms | Allocations: 3769)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:42:34 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:44:12 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3041)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 3754)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:44:12 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/questions" for ::1 at 2022-04-07 21:45:21 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 1.1ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 4478)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 1.1ms | Allocations: 5147)
+
+
+Started GET "/" for ::1 at 2022-04-07 21:48:10 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2430)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 2713)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:48:10 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:48:13 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2439)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 2699)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:48:13 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:48:14 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2448)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 2708)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:48:14 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:48:41 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2436)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2695)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:48:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:48:42 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2421)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 2681)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:48:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:48:49 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2433)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 2693)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:48:49 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:48:50 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2433)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 2693)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:48:50 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:49:05 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3047)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3748)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:49:06 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2424)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 2706)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:49:06 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2424)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 2683)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:49:18 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 3053)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 3755)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:49:18 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2427)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 2708)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:50:47 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3062)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3764)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:50:47 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:50:48 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2421)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 2702)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:50:48 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:50:54 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 3050)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 3753)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:50:54 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:50:55 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2439)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2721)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:50:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:50:55 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2428)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2688)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:50:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:50:55 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2407)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2666)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:50:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 21:52:58 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3043)
+Completed 200 OK in 11ms (Views: 10.0ms | Allocations: 3736)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 21:52:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:04:05 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 265)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nnguyen/Documents/dev/ftw_seo/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 52e5474f1d188beb2af8
+Version: webpack 4.46.0
+Time: 2132ms
+Built at: 04/07/2022 10:04:08 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6aeec4ea8aafa288466d.js    761 KiB  application  [emitted] [immutable]  application
+js/application-6aeec4ea8aafa288466d.js.map    792 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-6aeec4ea8aafa288466d.js js/application-6aeec4ea8aafa288466d.js.map
+[0] multi ./app/javascript/packs/application.js ./app/javascript/packs/application.scss 40 bytes {application} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/packs/application.scss 744 KiB {application} [built]
+    + 2 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2905.2ms | Allocations: 3840)
+Completed 200 OK in 2909ms (Views: 2908.3ms | Allocations: 4566)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:04:08 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:04:09 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2352)
+Completed 200 OK in 12ms (Views: 10.7ms | Allocations: 2643)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:04:09 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:04:54 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 2346)
+Completed 200 OK in 15ms (Views: 13.6ms | Allocations: 2619)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:04:54 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:09:26 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2343)
+Completed 200 OK in 5ms (Views: 4.3ms | Allocations: 2615)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:09:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:09:27 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2349)
+Completed 200 OK in 12ms (Views: 10.3ms | Allocations: 2621)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:09:27 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:10:15 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2340)
+Completed 200 OK in 10ms (Views: 8.3ms | Allocations: 2612)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:10:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:10:15 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2343)
+Completed 200 OK in 11ms (Views: 9.7ms | Allocations: 2615)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:10:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:10:16 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2340)
+Completed 200 OK in 12ms (Views: 11.4ms | Allocations: 2612)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:10:16 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:10:24 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2961)
+Completed 200 OK in 11ms (Views: 9.7ms | Allocations: 3669)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:10:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:10:25 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 2346)
+Completed 200 OK in 36ms (Views: 29.1ms | Allocations: 2636)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:10:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:10:25 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2341)
+Completed 200 OK in 9ms (Views: 7.7ms | Allocations: 2612)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:10:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:10:25 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2344)
+Completed 200 OK in 9ms (Views: 8.1ms | Allocations: 2616)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:10:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/questions" for ::1 at 2022-04-07 22:10:38 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.7ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2151)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 4406)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.6ms | Allocations: 5069)
+
+
+Started GET "/questions" for ::1 at 2022-04-07 22:10:40 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.2ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.3ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1314)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3452)
+Completed 200 OK in 17ms (Views: 13.3ms | ActiveRecord: 1.2ms | Allocations: 3761)
+
+
+Started GET "/" for ::1 at 2022-04-07 22:10:41 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2340)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 2616)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:10:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:10:41 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2349)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 2624)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:10:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:10:41 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2338)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 2613)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:10:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:10:41 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2332)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2607)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:10:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:10:42 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2350)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 2625)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:10:42 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:33:46 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2349)
+Completed 200 OK in 6ms (Views: 4.9ms | Allocations: 2620)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:33:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:33:46 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2343)
+Completed 200 OK in 12ms (Views: 10.4ms | Allocations: 2616)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:33:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:34:44 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 2349)
+Completed 200 OK in 28ms (Views: 27.0ms | Allocations: 2621)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:34:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 22:34:45 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2346)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 2618)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 22:34:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 23:45:32 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 2 pending migrations:
+
+20220405044605_create_questions.rb
+20220405044702_create_question_audios.rb
+
+
+):
+  
+activerecord (7.0.2.3) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.2.3) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.2.3) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.2.3) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE DATABASE `citizen_dev` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('5747952997004478225', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateQuestions (20220405044605)
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE `questions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `question_number` int NOT NULL, `question` text NOT NULL, `answer` text NOT NULL, `question_vn` text NOT NULL, `answer_vn` text NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (12.1ms)[0m  [1m[35mCREATE INDEX `index_questions_on_id_and_question_number` USING btree ON `questions` (`id`, `question_number`)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220405044605')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateQuestionAudios (20220405044702)
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE `question_audios` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `question_id` int, `question_number` int NOT NULL, `question_audio` mediumblob, `answer_audio` mediumblob, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE INDEX `index_questions_on_id` USING btree ON `questions` (`id`)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220405044702')[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2022-04-08 06:45:53.977237', '2022-04-08 06:45:53.977237')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('5747952997004478225')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO `questions` (`question_number`, `question`, `answer`, `question_vn`, `answer_vn`, `created_at`, `updated_at`) VALUES (1, 'What is the supreme law of the land?', 'the Constitution', 'Luật cao nhất của quốc gia là gì?', 'Hiến Pháp', '2022-04-08 06:45:54.030470', '2022-04-08 06:45:54.030470')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestionAudio Create (0.2ms)[0m  [1m[32mINSERT INTO `question_audios` (`question_id`, `question_number`, `question_audio`, `answer_audio`, `created_at`, `updated_at`) VALUES (NULL, 1, NULL, NULL, '2022-04-08 06:45:54.036914', '2022-04-08 06:45:54.036914')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO `questions` (`question_number`, `question`, `answer`, `question_vn`, `answer_vn`, `created_at`, `updated_at`) VALUES (2, 'What does the Constitution do?', '- sets up the government\\n - defines the government\\n - protects basic rights of Americans\\n', 'Hiến Pháp có mục đích gì?', '- thiết lập chánh phủ\\n - mô tả tổ chức chánh phủ\\n - bảo vệ các quyền căn bản của người dân Hoa Kỳ', '2022-04-08 06:45:54.038816', '2022-04-08 06:45:54.038816')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestionAudio Create (0.1ms)[0m  [1m[32mINSERT INTO `question_audios` (`question_id`, `question_number`, `question_audio`, `answer_audio`, `created_at`, `updated_at`) VALUES (NULL, 2, NULL, NULL, '2022-04-08 06:45:54.040467', '2022-04-08 06:45:54.040467')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO `questions` (`question_number`, `question`, `answer`, `question_vn`, `answer_vn`, `created_at`, `updated_at`) VALUES (3, 'The idea of self-government is in the first three words of the Constitution. What are these words?', 'We the People', 'Ý tưởng tự quản trị nằm trong ba chữ đầu tiên của Hiến Pháp. Các chữ này là những chữ nào?', 'Chúng tôi người dân (We the People)', '2022-04-08 06:45:54.042152', '2022-04-08 06:45:54.042152')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestionAudio Create (0.3ms)[0m  [1m[32mINSERT INTO `question_audios` (`question_id`, `question_number`, `question_audio`, `answer_audio`, `created_at`, `updated_at`) VALUES (NULL, 3, NULL, NULL, '2022-04-08 06:45:54.043980', '2022-04-08 06:45:54.043980')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO `questions` (`question_number`, `question`, `answer`, `question_vn`, `answer_vn`, `created_at`, `updated_at`) VALUES (4, 'What is an amendment?', '- a change (to the Constitution)\\n - an addition (to the Constitution)\\n', 'Tu chính án là gì?', '- một sự thay đổi (trong Hiến Pháp)\\n - một sự thêm (vào Hiến Pháp)\\n', '2022-04-08 06:45:54.045697', '2022-04-08 06:45:54.045697')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestionAudio Create (0.1ms)[0m  [1m[32mINSERT INTO `question_audios` (`question_id`, `question_number`, `question_audio`, `answer_audio`, `created_at`, `updated_at`) VALUES (NULL, 4, NULL, NULL, '2022-04-08 06:45:54.047329', '2022-04-08 06:45:54.047329')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2022-04-07 23:46:02 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 457)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nnguyen/Documents/dev/ftw_seo/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 579fe79223be707ac993
+Version: webpack 4.46.0
+Time: 2039ms
+Built at: 04/07/2022 11:46:05 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-587aba4c1341c406184b.js    761 KiB  application  [emitted] [immutable]  application
+js/application-587aba4c1341c406184b.js.map    792 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-587aba4c1341c406184b.js js/application-587aba4c1341c406184b.js.map
+[0] multi ./app/javascript/packs/application.js ./app/javascript/packs/application.scss 40 bytes {application} [built]
+[./app/javascript/packs/application.js] 847 bytes {application} [built]
+[./app/javascript/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/packs/application.scss 744 KiB {application} [built]
+    + 2 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2618.2ms | Allocations: 4756)
+Completed 200 OK in 2621ms (Views: 2619.4ms | ActiveRecord: 0.0ms | Allocations: 7231)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 23:46:05 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 23:47:12 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2022-04-07 23:47:13 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 30)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nnguyen/Documents/dev/ftw_seo/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 579fe79223be707ac993
+Version: webpack 4.46.0
+Time: 2037ms
+Built at: 04/07/2022 11:47:15 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-587aba4c1341c406184b.js    761 KiB  application  [emitted] [immutable]  application
+js/application-587aba4c1341c406184b.js.map    792 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-587aba4c1341c406184b.js js/application-587aba4c1341c406184b.js.map
+[0] multi ./app/javascript/packs/application.js ./app/javascript/packs/application.scss 40 bytes {application} [built]
+[./app/javascript/packs/application.js] 847 bytes {application} [built]
+[./app/javascript/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/packs/application.scss 744 KiB {application} [built]
+    + 2 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2612.3ms | Allocations: 7718)
+Completed 200 OK in 2615ms (Views: 2613.6ms | ActiveRecord: 0.0ms | Allocations: 8036)
+
+
+[Webpacker] Compiled all packs in /Users/nnguyen/Documents/dev/ftw_seo/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 579fe79223be707ac993
+Version: webpack 4.46.0
+Time: 2003ms
+Built at: 04/07/2022 11:47:15 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-587aba4c1341c406184b.js    761 KiB  application  [emitted] [immutable]  application
+js/application-587aba4c1341c406184b.js.map    792 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-587aba4c1341c406184b.js js/application-587aba4c1341c406184b.js.map
+[0] multi ./app/javascript/packs/application.js ./app/javascript/packs/application.scss 40 bytes {application} [built]
+[./app/javascript/packs/application.js] 847 bytes {application} [built]
+[./app/javascript/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/packs/application.scss 744 KiB {application} [built]
+    + 2 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2583.0ms | Allocations: 5045)
+Completed 200 OK in 2584ms (Views: 2583.3ms | ActiveRecord: 0.0ms | Allocations: 5330)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 23:47:16 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 23:47:48 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nnguyen/Documents/dev/ftw_seo/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: d1f75a8e998a48d98894
+Version: webpack 4.46.0
+Time: 366ms
+Built at: 04/07/2022 11:47:49 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6fe2281a4e0b11ebceac.js     18 KiB  application  [emitted] [immutable]  application
+js/application-6fe2281a4e0b11ebceac.js.map   17.6 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-6fe2281a4e0b11ebceac.js js/application-6fe2281a4e0b11ebceac.js.map
+[0] multi ./app/javascript/packs/application.js ./app/javascript/packs/application.scss 40 bytes {application} [built]
+[./app/javascript/packs/application.js] 847 bytes {application} [built]
+[./app/javascript/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/packs/application.scss 704 bytes {application} [built]
+    + 2 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 931.2ms | Allocations: 3420)
+Completed 200 OK in 935ms (Views: 933.2ms | ActiveRecord: 0.0ms | Allocations: 3696)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 23:47:49 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 23:47:53 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nnguyen/Documents/dev/ftw_seo/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 579fe79223be707ac993
+Version: webpack 4.46.0
+Time: 1907ms
+Built at: 04/07/2022 11:47:55 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-587aba4c1341c406184b.js    761 KiB  application  [emitted] [immutable]  application
+js/application-587aba4c1341c406184b.js.map    792 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-587aba4c1341c406184b.js js/application-587aba4c1341c406184b.js.map
+[0] multi ./app/javascript/packs/application.js ./app/javascript/packs/application.scss 40 bytes {application} [built]
+[./app/javascript/packs/application.js] 847 bytes {application} [built]
+[./app/javascript/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/packs/application.scss 744 KiB {application} [built]
+    + 2 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2476.4ms | Allocations: 3409)
+Completed 200 OK in 2480ms (Views: 2478.6ms | ActiveRecord: 0.0ms | Allocations: 3684)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 23:47:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 23:49:00 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nnguyen/Documents/dev/ftw_seo/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: ce61616481a3b34f9d5e
+Version: webpack 4.46.0
+Time: 1914ms
+Built at: 04/07/2022 11:49:03 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e3eb44b2fd7caccbe978.js    761 KiB  application  [emitted] [immutable]  application
+js/application-e3eb44b2fd7caccbe978.js.map    792 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e3eb44b2fd7caccbe978.js js/application-e3eb44b2fd7caccbe978.js.map
+[0] multi ./app/javascript/packs/application.js ./app/javascript/packs/application.scss 40 bytes {application} [built]
+[./app/javascript/packs/application.js] 847 bytes {application} [built]
+[./app/javascript/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/packs/application.scss 744 KiB {application} [built]
+    + 2 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2488.3ms | Allocations: 3370)
+Completed 200 OK in 2490ms (Views: 2488.8ms | ActiveRecord: 0.0ms | Allocations: 3647)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 23:49:03 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 23:51:38 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3681)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 6143)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 23:51:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 23:51:59 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nnguyen/Documents/dev/ftw_seo/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 25c22c407d3df63e3d5d
+Version: webpack 4.46.0
+Time: 2630ms
+Built at: 04/07/2022 11:52:02 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ab896541d7964572828b.js   1.14 MiB  application  [emitted] [immutable]  application
+js/application-ab896541d7964572828b.js.map   1.11 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ab896541d7964572828b.js js/application-ab896541d7964572828b.js.map
+[0] multi ./app/frontend/packs/application.js ./app/frontend/packs/application.scss 40 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 378 bytes {application} [built]
+[./app/frontend/packs/application.js] 885 bytes {application} [built]
+[./app/frontend/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/packs/application.scss 743 KiB {application} [built]
+    + 82 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3194.8ms | Allocations: 3566)
+Completed 200 OK in 3196ms (Views: 3195.5ms | ActiveRecord: 0.0ms | Allocations: 3873)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 23:52:02 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 23:53:00 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nnguyen/Documents/dev/ftw_seo/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: f18a32886fb708feea3f
+Version: webpack 4.46.0
+Time: 2080ms
+Built at: 04/07/2022 11:53:03 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b607e9c69acd795e0177.js   1.15 MiB  application  [emitted] [immutable]  application
+js/application-b607e9c69acd795e0177.js.map   1.12 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-b607e9c69acd795e0177.js js/application-b607e9c69acd795e0177.js.map
+[0] multi ./app/frontend/packs/application.js ./app/frontend/packs/application.scss 40 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 378 bytes {application} [built]
+[./app/frontend/packs/application.js] 885 bytes {application} [built]
+[./app/frontend/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/packs/application.scss 749 KiB {application} [built]
+    + 82 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2642.6ms | Allocations: 3370)
+Completed 200 OK in 2644ms (Views: 2643.4ms | ActiveRecord: 0.0ms | Allocations: 3631)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 23:53:03 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 23:53:49 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3125)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 3831)
+
+
+Started GET "/" for ::1 at 2022-04-07 23:53:58 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3109)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 3836)
+
+
+Started GET "/" for ::1 at 2022-04-07 23:54:15 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3333)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 4057)
+
+
+Started GET "/blog.css" for ::1 at 2022-04-07 23:54:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blog.css"):
+  
+Started GET "/" for ::1 at 2022-04-07 23:54:25 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3108)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 3833)
+
+
+Started GET "/" for ::1 at 2022-04-07 23:54:40 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3139)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3863)
+
+
+Started GET "/" for ::1 at 2022-04-07 23:54:49 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 3121)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 3845)
+
+
+Started GET "/" for ::1 at 2022-04-07 23:56:03 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 238)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 3094)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3818)
+
+
+Started GET "/" for ::1 at 2022-04-07 23:56:18 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 363)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3225)
+Completed 200 OK in 12ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3949)
+
+
+Started GET "/carousel.css" for ::1 at 2022-04-07 23:56:18 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/carousel.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/" for ::1 at 2022-04-07 23:56:35 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nnguyen/Documents/dev/ftw_seo/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: c0c6dca684b170deafec
+Version: webpack 4.46.0
+Time: 2086ms
+Built at: 04/07/2022 11:56:37 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a8734ed84f3496be9d41.js   1.15 MiB  application  [emitted] [immutable]  application
+js/application-a8734ed84f3496be9d41.js.map   1.12 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a8734ed84f3496be9d41.js js/application-a8734ed84f3496be9d41.js.map
+[0] multi ./app/frontend/packs/application.js ./app/frontend/packs/application.scss 40 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 378 bytes {application} [built]
+[./app/frontend/packs/application.js] 885 bytes {application} [built]
+[./app/frontend/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/packs/application.scss 750 KiB {application} [built]
+    + 82 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2644.1ms | Allocations: 3408)
+Completed 200 OK in 2645ms (Views: 2644.9ms | ActiveRecord: 0.0ms | Allocations: 3690)
+
+
+Started GET "/carousel.css" for ::1 at 2022-04-07 23:56:37 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/carousel.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/" for ::1 at 2022-04-07 23:57:02 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 261)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nnguyen/Documents/dev/ftw_seo/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 94bb63ebdbc28e3fbcd3
+Version: webpack 4.46.0
+Time: 2098ms
+Built at: 04/07/2022 11:57:05 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9545d0e4b31e0d1b78a1.js   1.15 MiB  application  [emitted] [immutable]  application
+js/application-9545d0e4b31e0d1b78a1.js.map   1.12 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9545d0e4b31e0d1b78a1.js js/application-9545d0e4b31e0d1b78a1.js.map
+[0] multi ./app/frontend/packs/application.js ./app/frontend/packs/application.scss 40 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 378 bytes {application} [built]
+[./app/frontend/packs/application.js] 885 bytes {application} [built]
+[./app/frontend/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/packs/application.scss 750 KiB {application} [built]
+    + 82 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2669.8ms | Allocations: 4015)
+Completed 200 OK in 2674ms (Views: 2670.9ms | ActiveRecord: 0.0ms | Allocations: 4717)
+
+
