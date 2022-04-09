@@ -6520,3 +6520,1107 @@ Entrypoint application = js/application-9545d0e4b31e0d1b78a1.js js/application-9
 Completed 200 OK in 2674ms (Views: 2670.9ms | ActiveRecord: 0.0ms | Allocations: 4717)
 
 
+Started GET "/" for ::1 at 2022-04-08 23:24:25 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 453)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3686)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 6147)
+
+
+Started GET "/questions" for ::1 at 2022-04-08 23:24:35 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.5ms | Allocations: 312)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 7503)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 9892)
+Completed 200 OK in 25ms (Views: 16.6ms | ActiveRecord: 5.5ms | Allocations: 11473)
+
+
+Started GET "/questions" for ::1 at 2022-04-08 23:35:06 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.7ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 2200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 4771)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.9ms | Allocations: 5655)
+
+
+Started GET "/question_audios" for ::1 at 2022-04-08 23:35:08 -0700
+Processing by QuestionAudiosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering question_audios/index.html.erb within layouts/application
+  [1m[36mQuestionAudio Load (1.2ms)[0m  [1m[34mSELECT `question_audios`.* FROM `question_audios`[0m
+  ↳ app/views/question_audios/index.html.erb:6
+  Rendered question_audios/_question_audio.html.erb (Duration: 0.6ms | Allocations: 249)
+  Rendered question_audios/_question_audio.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered question_audios/_question_audio.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered question_audios/_question_audio.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered question_audios/index.html.erb within layouts/application (Duration: 19.8ms | Allocations: 5055)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 7372)
+Completed 200 OK in 30ms (Views: 16.2ms | ActiveRecord: 11.1ms | Allocations: 8700)
+
+
+Started GET "/question_audios/1" for ::1 at 2022-04-08 23:35:13 -0700
+Processing by QuestionAudiosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestionAudio Load (1.1ms)[0m  [1m[34mSELECT `question_audios`.* FROM `question_audios` WHERE `question_audios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/question_audios_controller.rb:63:in `set_question_audio'
+  Rendering layout layouts/application.html.erb
+  Rendering question_audios/show.html.erb within layouts/application
+  Rendered question_audios/_question_audio.html.erb (Duration: 0.5ms | Allocations: 29)
+  Rendered question_audios/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 917)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3140)
+Completed 200 OK in 17ms (Views: 7.8ms | ActiveRecord: 1.1ms | Allocations: 5925)
+
+
+Started GET "/question_audios/1" for ::1 at 2022-04-08 23:35:32 -0700
+Processing by QuestionAudiosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestionAudio Load (0.6ms)[0m  [1m[34mSELECT `question_audios`.* FROM `question_audios` WHERE `question_audios`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/question_audios_controller.rb:63:in `set_question_audio'
+  Rendering layout layouts/application.html.erb
+  Rendering question_audios/show.html.erb within layouts/application
+  Rendered question_audios/_question_audio.html.erb (Duration: 0.2ms | Allocations: 24)
+  Rendered question_audios/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 554)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2795)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.6ms | Allocations: 3591)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:38:53 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 260)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2908)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 3476)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:41:02 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3130)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3854)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:41:02 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2502)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 2785)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:41:10 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3167)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 3869)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:41:10 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 2520)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 2801)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:41:14 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 3116)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 3818)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:41:15 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2493)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 2774)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:41:30 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3103)
+Completed 200 OK in 17ms (Views: 15.9ms | Allocations: 3797)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:41:31 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2499)
+Completed 200 OK in 11ms (Views: 10.6ms | Allocations: 2776)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:41:59 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 236)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3105)
+Completed 200 OK in 9ms (Views: 7.6ms | Allocations: 3798)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:42:14 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3110)
+Completed 200 OK in 10ms (Views: 9.0ms | Allocations: 3824)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:43:47 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 3118)
+Completed 200 OK in 17ms (Views: 16.1ms | Allocations: 3832)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:43:48 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2514)
+Completed 200 OK in 12ms (Views: 10.8ms | Allocations: 2791)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:44:46 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3084)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 3777)
+
+
+Started GET "/" for ::1 at 2022-04-08 23:54:57 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 393)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3622)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 6083)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:00:36 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2607)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 2928)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:00:40 -0700
+  
+ActionController::RoutingError (uninitialized constant WelcomeVnController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  WelcomeController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/vn" for ::1 at 2022-04-09 00:00:44 -0700
+  
+ActionController::RoutingError (uninitialized constant WelcomeVnController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  WelcomeController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/vn" for ::1 at 2022-04-09 00:01:36 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2803)
+Completed 200 OK in 4ms (Views: 3.3ms | Allocations: 3483)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:01:50 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2639)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 3262)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:01:53 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2481)
+Completed 200 OK in 12ms (Views: 10.3ms | Allocations: 2757)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:02:10 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3097)
+Completed 200 OK in 13ms (Views: 12.3ms | Allocations: 3796)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:02:10 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2502)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 2779)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:03:08 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3074)
+Completed 200 OK in 11ms (Views: 10.9ms | Allocations: 3773)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:04:13 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3078)
+Completed 200 OK in 13ms (Views: 12.3ms | Allocations: 3792)
+
+
+Started GET "/questions" for ::1 at 2022-04-09 00:06:11 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.2ms | Allocations: 310)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 7657)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 10238)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 5.0ms | Allocations: 12007)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:06:47 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2798)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 3482)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:06:47 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2508)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 2789)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:06:47 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2499)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 2758)
+
+
+Started GET "/questions" for ::1 at 2022-04-09 00:08:45 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.0ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.2ms | Allocations: 37)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1441)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3691)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 1.0ms | Allocations: 3972)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:16:03 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3106)
+Completed 200 OK in 9ms (Views: 8.3ms | Allocations: 3799)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:16:05 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2499)
+Completed 200 OK in 12ms (Views: 11.4ms | Allocations: 2776)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:16:11 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3076)
+Completed 200 OK in 13ms (Views: 12.7ms | Allocations: 3769)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:16:42 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3091)
+Completed 200 OK in 18ms (Views: 15.9ms | Allocations: 3805)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:17:03 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 3085)
+Completed 200 OK in 20ms (Views: 18.1ms | Allocations: 3800)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:17:17 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3088)
+Completed 200 OK in 14ms (Views: 12.2ms | Allocations: 3802)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:17:24 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3091)
+Completed 200 OK in 12ms (Views: 11.9ms | Allocations: 3805)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:17:57 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3082)
+Completed 200 OK in 10ms (Views: 8.9ms | Allocations: 3796)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:17:58 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2827)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 3501)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:18:13 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 3045)
+Completed 200 OK in 4ms (Views: 3.8ms | Allocations: 3857)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:18:25 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 206)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3056)
+Completed 200 OK in 4ms (Views: 3.9ms | Allocations: 3871)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:18:27 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 199)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2806)
+Completed 200 OK in 14ms (Views: 13.1ms | Allocations: 3477)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:18:27 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2520)
+Completed 200 OK in 8ms (Views: 6.9ms | Allocations: 2797)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:18:30 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2511)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 2767)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:18:35 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2511)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 2767)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:18:36 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2490)
+Completed 200 OK in 10ms (Views: 8.7ms | Allocations: 2748)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:18:39 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 2496)
+Completed 200 OK in 15ms (Views: 14.0ms | Allocations: 2752)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:18:39 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2538)
+Completed 200 OK in 13ms (Views: 12.2ms | Allocations: 2794)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:18:41 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 2511)
+Completed 200 OK in 13ms (Views: 12.0ms | Allocations: 2768)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:19:24 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3086)
+Completed 200 OK in 11ms (Views: 9.8ms | Allocations: 3779)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:19:35 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3085)
+Completed 200 OK in 10ms (Views: 9.9ms | Allocations: 3799)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:22:42 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3088)
+Completed 200 OK in 8ms (Views: 8.0ms | Allocations: 3802)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:22:43 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2499)
+Completed 200 OK in 10ms (Views: 9.0ms | Allocations: 2776)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:23:02 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3073)
+Completed 200 OK in 8ms (Views: 7.8ms | Allocations: 3766)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:23:34 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 3100)
+Completed 200 OK in 14ms (Views: 13.1ms | Allocations: 3815)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:24:20 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3110)
+Completed 200 OK in 12ms (Views: 11.6ms | Allocations: 3826)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:24:22 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2839)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 3419)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:24:25 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 2493)
+Completed 200 OK in 13ms (Views: 11.9ms | Allocations: 2770)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:24:26 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2514)
+Completed 200 OK in 11ms (Views: 10.6ms | Allocations: 2772)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:24:27 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2499)
+Completed 200 OK in 12ms (Views: 10.8ms | Allocations: 2756)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:24:30 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2502)
+Completed 200 OK in 10ms (Views: 8.7ms | Allocations: 2759)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:25:51 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2496)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 2752)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:25:53 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2484)
+Completed 200 OK in 12ms (Views: 11.0ms | Allocations: 2740)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:26:38 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3083)
+Completed 200 OK in 10ms (Views: 8.3ms | Allocations: 3776)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:26:43 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2508)
+Completed 200 OK in 13ms (Views: 11.4ms | Allocations: 2785)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:26:44 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2854)
+Completed 200 OK in 13ms (Views: 12.8ms | Allocations: 3413)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:26:44 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 2502)
+Completed 200 OK in 14ms (Views: 13.0ms | Allocations: 2779)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:26:45 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2514)
+Completed 200 OK in 7ms (Views: 6.2ms | Allocations: 2771)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:26:49 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3075)
+Completed 200 OK in 11ms (Views: 10.2ms | Allocations: 3768)
+
+
+Started GET "/questions" for ::1 at 2022-04-09 00:27:12 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.6ms | Allocations: 250)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3912)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 6242)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.6ms | Allocations: 7745)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:27:16 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2860)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3453)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:27:17 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2493)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 2778)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:27:18 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2499)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 2761)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:34:58 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3098)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 3791)
+
+
+Started GET "/questions" for ::1 at 2022-04-09 00:35:44 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:16
+  Rendered questions/_question.html.erb (Duration: 0.3ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4788)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.6ms | Allocations: 5659)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:36:06 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 199)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2848)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 3437)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:36:07 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2846)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 3436)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:37:13 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2499)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 2781)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:37:14 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2496)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 2756)
+
+
+Started GET "/questions" for ::1 at 2022-04-09 00:40:51 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:14
+  Rendered questions/_question.html.erb (Duration: 0.6ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1682)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 4598)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.4ms | Allocations: 5467)
+
+
+Started GET "/questions" for ::1 at 2022-04-09 00:40:51 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:14
+  Rendered questions/_question.html.erb (Duration: 0.2ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3604)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.5ms | Allocations: 3900)
+
+
+Started GET "/questions" for ::1 at 2022-04-09 00:40:58 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.8ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:14
+  Rendered questions/_question.html.erb (Duration: 0.7ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1687)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4597)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.8ms | Allocations: 5444)
+
+
+Started GET "/questions" for ::1 at 2022-04-09 00:41:06 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:11
+  Rendered questions/_question.html.erb (Duration: 0.7ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1678)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4591)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 1.5ms | Allocations: 5462)
+
+
+Started GET "/questions" for ::1 at 2022-04-09 00:41:17 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:9
+  Rendered questions/_question.html.erb (Duration: 0.7ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1676)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 4604)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.7ms | Allocations: 5476)
+
+
+Started GET "/questions" for ::1 at 2022-04-09 00:41:18 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:9
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3604)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.3ms | Allocations: 3901)
+
+
+Started GET "/questions" for ::1 at 2022-04-09 00:41:18 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:9
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 3616)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.5ms | Allocations: 3886)
+
+
+Started GET "/questions" for ::1 at 2022-04-09 00:41:19 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:9
+  Rendered questions/_question.html.erb (Duration: 0.2ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 3607)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.7ms | Allocations: 3877)
+
+
+Started GET "/questions" for ::1 at 2022-04-09 00:41:23 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:7
+  Rendered questions/_question.html.erb (Duration: 1.4ms | Allocations: 236)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.3ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1674)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 4582)
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 0.4ms | Allocations: 5427)
+
+
+Started GET "/questions" for ::1 at 2022-04-09 00:41:23 -0700
+Processing by QuestionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.1ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/questions/index.html.erb:7
+  Rendered questions/_question.html.erb (Duration: 0.4ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered questions/_question.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered questions/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 3592)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 1.1ms | Allocations: 3888)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:42:03 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2863)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 3432)
+
+
+Started GET "/" for ::1 at 2022-04-09 00:42:05 -0700
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2856)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 3446)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:42:06 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2502)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 2784)
+
+
+Started GET "/vn" for ::1 at 2022-04-09 00:45:45 -0700
+Processing by WelcomeVnController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome_vn/index.html.erb within layouts/application
+  Rendered welcome_vn/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2493)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 2753)
+
+

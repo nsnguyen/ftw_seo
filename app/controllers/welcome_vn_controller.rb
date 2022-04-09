@@ -1,0 +1,2 @@
+class WelcomeVnController < ApplicationController  
+end  
