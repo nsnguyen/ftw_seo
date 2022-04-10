@@ -1,5 +1,5 @@
-<div class="row mb-4" id="<%= dom_id question %>">
-    <div class="col-6 col-md-6 themed-grid-col p-5 text-white bg-dark border rounded-pill">
+<div class="row mb-1">
+    <div class="col-md-6 themed-grid-col" id="<%= dom_id question %>">
         <p>
             <strong>Question:</strong>
             <%= question.question %>
@@ -8,8 +8,11 @@
             <strong>Question vn:</strong>
             <%= question.question_vn %>
         </p>
+        <audio src="<%= audio_tag 'question_1.mp3' %>" type="audio/mpeg" controls>
+            Your browser does not support the audio element.
+        </audio>
     </div>
-    <div class="col-6 col-md-6 themed-grid-col p-5 text-white bg-dark border rounded-pill">
+    <div class="col-md-6 themed-grid-col">
         <p>
             <strong>Answer:</strong>
             <%= question.answer %>

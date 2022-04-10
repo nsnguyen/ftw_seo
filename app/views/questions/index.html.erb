@@ -1,14 +1,9 @@
-    <div class="container py-4">
-        <header class="pb-3 mb-4 border-bottom">
-        </header>
-
-        <div class="container py-4">
-            <div id="questions">
-                    <% @questions.each do |question| %>
-                        <%= render question %>
-                    <% end %>
-            </div>
-            <footer class="pt-3 mt-4 text-muted border-top">
-                &copy; 2021
-            </footer>
-        </div>
+<div class="row my-1">
+    <div class="col-md-8 my-1 themed-grid-col">
+        <% @questions.each do |question| %>
+        <%= render question %>
+        <% end %>
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>
